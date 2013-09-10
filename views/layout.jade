@@ -1,0 +1,41 @@
+!!! 5
+html
+  head
+    title ProfAsia Prototype
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/font-awesome.css')
+    script(src='/js/jquery-2.0.3.min.js')
+    script(src='/js/scalpel-0.2.1.min.js')
+  body
+    #header
+      a.brand(href='/index.html')
+        img(src='/img/logo.png', alt='ProfAsia')
+      .auth
+        a.principal(href='/dashboard.html')
+          span Жозеф Луи Лагранж
+      .nav
+        a.active(href='/applicant/index.html')
+          span Соискатель
+        a(href='/employer/index.html')
+          span Работодатель
+    #content
+      #sidenav
+        .group
+          a(href='/applicant/search.html')
+            i.icon-search
+            span Поиск работы
+          a(href='/applicant/invites.html')
+            i.icon-inbox
+            span Приглашения
+          a(href='/applicant/connect.html')
+            i.icon-bullhorn
+            span Связь
+        .group
+          a.active(href='/applicant/index.html')
+            i.icon-user
+            span Резюме
+      #main
+        block main
+
+    #footer
+      p 2012—2013 &copy; <a href='http://profasia.org'>ProfAsia LLC</a>
