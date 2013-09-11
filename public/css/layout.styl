@@ -26,11 +26,9 @@ body
     text-align:center
     img
       vertical-align:middle
-  .nav, .auth
+  .nav
     display:inline-block
-  .auth
-    float:right
-  .nav > a, .auth > a
+  .nav > a
     position:relative
     display:inline-block
     color: #aaa
@@ -61,6 +59,8 @@ body
       position:static
       display:block
       text-align:center
+      > a.active::after
+        display:none
 
 #content
   background: rgba(0,0,0,.25)
@@ -76,12 +76,11 @@ body
     text-shadow: 0 1px 1px #000
     text-decoration: none
     padding: 6px 16px
-    i + span
-      margin-left: 8px
     &:hover, &.active
       color: #fff
-    &.active i
-      text-shadow: 0 1px 1px #000, 0 0 1px #7ab, 0 0 8px #aad0de
+    &.active
+      color: #fff
+      text-shadow: 0 0 1px #aad0de, 0 0 16px #aad0de
 
 #main
   margin-left: 192px
@@ -90,7 +89,10 @@ body
 @media screen and (max-width:768px)
   #sidenav
     float:none
-    display:none
+    text-align:center
+    width: auto
+    a
+      display:inline-block
   #main
     margin-left:0
 

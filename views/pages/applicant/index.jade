@@ -1,23 +1,51 @@
-extends ../../layout
+extends layout
 
 block main
+  div(data-ref='#nav-applicant, #nav-index')
   .frame
-    .paper.pad
-      h1 Резюме
-      p Lorsque j'avais six ans, j'ai vu, une fois, une magnifique image.
+    .paper
+      .pad
+        h2 Жозеф Луи Лагранж
+        .subtitle 77 лет, женат, дети
+      hr.no-margin
+      table.rows(width="100%")
+        tr
+          td.right-align Основная специальность
+          td: em Математик
+        tr
+          td.right-align Дополнительная специальность
+          td: em Инженер-механик
+        tr
+          td.right-align Стаж работы
+          td: em > 25 лет
+        tr
+          td.right-align Зарплатные ожидания
+          td: em 120 000 € / год
+        tr
+          td.right-align Образование
+          td: em Высшее профессиональное
 
   .row.margin-top
     .span-6
       .frame
         .headline.tobi.border-bottom
           i.icon-info-sign
-          span Информация
-        .paper.pad
-          p Lorsque j'avais six ans, j'ai vu, une fois, une magnifique image.
+          span Прошлые работодатели
+        .paper
+          table.rows(width="100%")
+            tr
+              td Regno di Sardegna
+            tr
+              td Académie des sciences
+
     .span-6
       .frame
-        .headline.loki.border-bottom
-          i.icon-ok-sign
-          span Результаты
-        .paper.pad
-          p Lorsque j'avais six ans, j'ai vu, une fois, une magnifique image.
+        .headline.tobi.border-bottom
+          i.icon-info-sign
+          span Образовательные учреждения
+        .paper
+          table.rows(width="100%")
+            tr
+              td Regno di Sardegna
+            tr
+              td Académie des sciences
