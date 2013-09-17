@@ -15,7 +15,7 @@ module.exports = function(grunt) {
           data: {
             pkg: pkg,
             cdn: function(path) {
-              return '/public/' + path;
+              return '/public' + path;
             }
           }
         },
