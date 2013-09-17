@@ -15,6 +15,15 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 
+app.use(function(req, res, next) {
+  _.extend(res.locals, {
+    cdn: function(path) {
+      return path;
+    }
+  });
+  next();
+});
+
 app.use(app.router);
 app.use(stylus.middleware({
   src: publicPath,

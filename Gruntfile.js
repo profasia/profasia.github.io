@@ -13,7 +13,10 @@ module.exports = function(grunt) {
         options: {
           pretty: true,
           data: {
-            pkg: pkg
+            pkg: pkg,
+            cdn: function(path) {
+              return '/public/' + path;
+            }
           }
         },
         files: [ {
