@@ -3,6 +3,7 @@
   <head>
     <title>ProfAsia Prototype</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <link rel="stylesheet" href="/public/css/main.css">
     <link rel="stylesheet" href="/public/css/font-awesome.css">
     <script src="/public/js/jquery-2.0.3.min.js"></script>
@@ -10,7 +11,9 @@
   </head>
   <body>
     <div id="header"><a href="/index.html" class="brand"><img src="/public/img/logo.png" alt="ProfAsia"></a>
-      <div class="nav"><a id="nav-applicant" href="/applicant/index.html"><i class="icon-user smooth"></i><span>Жозеф Луи Лагранж</span></a><a id="nav-acmecorp" href="/employer/index.html"><i class="icon-building smooth"></i><span>AcmeCorp Inc.</span></a></div>
+      <div class="nav"><a id="nav-applicant" href="/applicant/index.html"><i class="icon-user smooth"></i><span>Жозеф Луи Лагранж</span></a><a id="nav-acmecorp" href="/employer/index.html"><i class="icon-building smooth"></i><span>AcmeCorp Inc.</span></a><a id="nav-choose-org" href="javascript:;" data-switch="#choose-org" class="sticky"><i class="icon-caret-down"></i></a>
+        <div id="choose-org" data-url="/partials/choose-org.html" class="dropdown right"></div>
+      </div>
     </div>
     <div id="content">
       <div id="sidenav">

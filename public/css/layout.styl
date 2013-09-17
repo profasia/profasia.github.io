@@ -28,6 +28,7 @@ body
     img
       vertical-align:middle
   .nav
+    position:relative
     display:inline-block
   .nav > a
     position:relative
@@ -40,6 +41,9 @@ body
     text-decoration: none
     &:hover
       color:#fff
+    &.sticky
+      padding:0
+      margin-left:-12px
   .nav > a.active
     color: #fff
     &::after

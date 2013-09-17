@@ -3,6 +3,7 @@ html
   head
     title ProfAsia Prototype
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=2')
     link(rel='stylesheet', href=cdn('/css/main.css'))
     link(rel='stylesheet', href=cdn('/css/font-awesome.css'))
     script(src=cdn('/js/jquery-2.0.3.min.js'))
@@ -18,6 +19,9 @@ html
         a#nav-acmecorp(href='/employer/index.html')
           i.icon-building.smooth
           span AcmeCorp Inc.
+        a#nav-choose-org.sticky(href='javascript:;', data-switch='#choose-org')
+          i.icon-caret-down
+        #choose-org.dropdown.right(data-url='/partials/choose-org.html')
     #content
       #sidenav
         block sidenav
