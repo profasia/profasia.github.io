@@ -12,5 +12,9 @@
     "nib": "*",
     "moment": "*",
     "underscore": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jade": "*"
   }
 }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProfAsia Prototype</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/scalpel-0.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="header"><a href="/index.html" class="brand"><img src="/img/logo.png" alt="ProfAsia"></a>
+      <div class="nav"><a id="nav-applicant" href="/applicant/index.html"><i class="icon-user smooth"></i><span>Жозеф Луи Лагранж</span></a><a id="nav-acmecorp" href="/employer/index.html"><i class="icon-building smooth"></i><span>AcmeCorp Inc.</span></a></div>
+    </div>
+    <div id="content">
+      <div id="sidenav"><a id="nav-index" href="/applicant/index.html"><i class="icon-user smooth"></i><span>Мое резюме</span></a><a id="nav-search" href="/applicant/search.html"><i class="icon-search smooth"></i><span>Поиск работы</span></a><a id="nav-invites" href="/applicant/invites.html"><i class="icon-inbox smooth"></i><span>Приглашения</span>
+          <div class="badge">2</div></a><a id="nav-connect" href="/applicant/connect.html"><i class="icon-comments smooth"></i><span>Связь</span></a></div>
+      <div id="main">
+        <div data-ref="#nav-applicant, #nav-search"></div>
+        <div class="row">
+          <div class="span-3">
+            <div class="frame">
+              <div class="headline secondary"><i class="icon-cogs"></i><span>Параметры поиска</span></div>
+              <div class="paper pad">
+                <div class="ctl-row">
+                  <label>Специальность</label>
+                  <div class="subtle"><выбор специальности></div>
+                </div>
+                <div class="ctl-row">
+                  <label>Страна</label>
+                  <div class="subtle"><выбор страны, затем города></div>
+                </div>
+                <div class="ctl-row">
+                  <label>Занятость</label>
+                  <div class="subtle"><выбор></div>
+                </div>
+                <div class="ctl-row">
+                  <label>Оклад</label>
+                  <div class="subtle"><выбор></div>
+                </div>
+              </div>
+            </div>
+            <div class="frame margin-top">
+              <div class="headline primary"><i class="icon-th"></i><span>Отрасли</span></div>
+              <div class="paper">
+                <div class="stacknav small"><a href="#">Рабочий персонал и персонал без квалификации</a><a href="#">Строительство, Проектирование и Архитектура</a><a href="#">Рестораны и Общественное питание</a><a href="#">Домашний персонал</a><a href="#">Недвижимость, эксплуатация зданий и ЖКХ</a><a href="#">Гостиничное дело, туризм и развлечения</a><a href="#">Услуги, ремонт и сервисное обслуживание</a><a href="#">Производство, промышленность и сельское хозяйство</a><a href="#">Транспорт, таможня и логистика</a><a href="#">Добыча природного сырья, нефтяная отрасль и ТЭК</a><a href="#">Оптово-розничная торговля, закупка и снабжение</a><a href="#">Административный персонал и Безопасность</a><a href="#">Управление персоналом и HR</a><a href="#">Бухгалтерия, Банки и Финансы</a><a href="#">Руководящие должности и высший менеджмент</a><a href="#">Юриспруденция</a><a href="#">Страхование, Консультирование и Аудит</a><a href="#">Образование, наука и лингвистика</a><a href="#">Культура, творчество и шоу индустрия</a><a href="#">СМИ, издательство, полиграфия и дизайн</a><a href="#">IT, интернет и связь</a><a href="#">Маркетинг, реклама и PR</a><a href="#">Медицина,Фармацевтика и Ветеринария</a><a href="#">Красота и спорт</a><a href="#">Начало карьеры, cтуденты</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="span-9">
+            <div class="frame shelved">
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme1.jpg" width="64" height="64">
+                    <h3>AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Разнорабочий</h2>
+                      <p class="subtitle">Рабочий персонал и персонал без квалификации</p>
+                      <p class="kicker">до 20 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme2.jpg" width="64" height="64">
+                    <h3>Another AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Математик</h2>
+                      <p class="subtitle">Образование, наука и лингвистика</p>
+                      <p class="kicker">до 120 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme1.jpg" width="64" height="64">
+                    <h3>AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Разнорабочий</h2>
+                      <p class="subtitle">Рабочий персонал и персонал без квалификации</p>
+                      <p class="kicker">до 20 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme2.jpg" width="64" height="64">
+                    <h3>Another AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Математик</h2>
+                      <p class="subtitle">Образование, наука и лингвистика</p>
+                      <p class="kicker">до 120 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme1.jpg" width="64" height="64">
+                    <h3>AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Разнорабочий</h2>
+                      <p class="subtitle">Рабочий персонал и персонал без квалификации</p>
+                      <p class="kicker">до 20 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" class="grid paper">
+                <tr>
+                  <td width="25%" class="centered"><img src="/img/misc/acme2.jpg" width="64" height="64">
+                    <h3>Another AcmeCorp Inc</h3>
+                    <div class="subtitle"><i class="icon-map-marker"></i><span>Россия, Москва</span></div>
+                  </td>
+                  <td>
+                    <div class="pad">
+                      <h2>Математик</h2>
+                      <p class="subtitle">Образование, наука и лингвистика</p>
+                      <p class="kicker">до 120 000 руб.</p>
+                      <p><a href="#" class="btn"><i class="icon-info-sign"></i><span>Подробнее</span></a><a href="#" class="btn"><i class="icon-building"></i><span>О компании</span></a><a href="#" class="btn primary"><i class="icon-edit"></i><span>Отправить заявку</span></a></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>2012—2013 &copy; <a href='http://profasia.org'>ProfAsia LLC</a></p>
+    </div>
+  </body>
+</html>
