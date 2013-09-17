@@ -1,7 +1,9 @@
 var express = require('express')
   , http = require('http')
   , stylus = require('stylus')
-  , nib = require('nib');
+  , nib = require('nib')
+  , _ = require('underscore')
+  , moment = require('moment');
 
 var port = process.env.PORT || 3001;
 var publicPath = __dirname + '/public';
@@ -12,6 +14,17 @@ app.set('view engine', 'jade');
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
+
+app.use(function(req, res, next) {
+  _.extend(res.locals, {
+    _: _,
+    moment: function() {
+      return moment.apply(moment, arguments).lang('ru');
+    }
+  });
+  next();
+});
+
 app.use(app.router);
 app.use(stylus.middleware({
   src: publicPath,

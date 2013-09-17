@@ -9,6 +9,8 @@
     "express": "*",
     "jade": "*",
     "stylus": "*",
-    "nib": "*"
+    "nib": "*",
+    "moment": "*",
+    "underscore": "*"
   }
 }

@@ -1,0 +1,107 @@
+extends layout
+
+block main
+  div(data-ref='#nav-applicant, #nav-search')
+  .row
+    .span-3
+      .frame
+        .headline.secondary
+          i.icon-cogs
+          span Параметры поиска
+        .paper.pad
+          .ctl-row
+            label Специальность
+            .subtle <выбор специальности>
+          .ctl-row
+            label Страна
+            .subtle <выбор страны, затем города>
+          .ctl-row
+            label Занятость
+            .subtle <выбор>
+          .ctl-row
+            label Оклад
+            .subtle <выбор>
+
+      .frame.margin-top
+        .headline.primary
+          i.icon-th
+          span Отрасли
+        .paper
+          .stacknav.small
+            a(href='#') Рабочий персонал и персонал без квалификации
+            a(href='#') Строительство, Проектирование и Архитектура
+            a(href='#') Рестораны и Общественное питание
+            a(href='#') Домашний персонал
+            a(href='#') Недвижимость, эксплуатация зданий и ЖКХ
+            a(href='#') Гостиничное дело, туризм и развлечения
+            a(href='#') Услуги, ремонт и сервисное обслуживание
+            a(href='#') Производство, промышленность и сельское хозяйство
+            a(href='#') Транспорт, таможня и логистика
+            a(href='#') Добыча природного сырья, нефтяная отрасль и ТЭК
+            a(href='#') Оптово-розничная торговля, закупка и снабжение
+            a(href='#') Административный персонал и Безопасность
+            a(href='#') Управление персоналом и HR
+            a(href='#') Бухгалтерия, Банки и Финансы
+            a(href='#') Руководящие должности и высший менеджмент
+            a(href='#') Юриспруденция
+            a(href='#') Страхование, Консультирование и Аудит
+            a(href='#') Образование, наука и лингвистика
+            a(href='#') Культура, творчество и шоу индустрия
+            a(href='#') СМИ, издательство, полиграфия и дизайн
+            a(href='#') IT, интернет и связь
+            a(href='#') Маркетинг, реклама и PR
+            a(href='#') Медицина,Фармацевтика и Ветеринария
+            a(href='#') Красота и спорт
+            a(href='#') Начало карьеры, cтуденты
+    .span-9
+      .frame.shelved
+        for i in [0,1,2]
+          table.grid.paper(width='100%')
+            tr
+              td.centered(width='25%')
+                img(src='/img/misc/acme1.jpg', width=64, height=64)
+                h3 AcmeCorp Inc
+                .subtitle
+                  i.icon-map-marker
+                  span Россия, Москва
+              td
+                .pad
+                  h2 Разнорабочий
+                  p.subtitle Рабочий персонал и персонал без квалификации
+                  p.kicker до 20 000 руб.
+                  p
+                    a.btn(href='#')
+                      i.icon-info-sign
+                      span Подробнее
+                    a.btn(href='#')
+                      i.icon-building
+                      span О компании
+                    a.btn.primary(href='#')
+                      i.icon-edit
+                      span Отправить заявку
+          table.grid.paper(width='100%')
+            tr
+              td.centered(width='25%')
+                img(src='/img/misc/acme2.jpg', width=64, height=64)
+                h3 Another AcmeCorp Inc
+                .subtitle
+                  i.icon-map-marker
+                  span Россия, Москва
+              td
+                .pad
+                  h2 Математик
+                  p.subtitle Образование, наука и лингвистика
+                  p.kicker до 120 000 руб.
+                  p
+                    a.btn(href='#')
+                      i.icon-info-sign
+                      span Подробнее
+                    a.btn(href='#')
+                      i.icon-building
+                      span О компании
+                    a.btn.primary(href='#')
+                      i.icon-edit
+                      span Отправить заявку
+
+
+

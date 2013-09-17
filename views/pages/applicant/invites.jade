@@ -1,0 +1,41 @@
+extends layout
+
+block main
+  div(data-ref='#nav-applicant, #nav-invites')
+  .frame.shelved
+    .paper.pad
+      img(src='/img/misc/acme2.jpg', width=96, height=96).left-float.margin
+      .right-float.margin
+        .btn-group
+          a.btn.primary(href='#') Принять
+          a.btn.danger(href='#') Отклонить
+      .no-overflow
+        h3 AcmeCorp Inc.
+        .subtitle 305029 Российская Федерация, г. Курск, ул. Карла Маркса 61б
+        p
+          i.icon-question-sign
+          span <приглашен по проф-коду> | <найден по отраслям>
+      .clear
+      .subtle
+        span Приглашение отправлено
+        span= moment('2013-09-07').fromNow()
+    .paper.pad
+      img(src='/img/misc/acme1.jpg', width=96, height=96).left-float.margin
+      .right-float.margin
+        .btn-group
+          a.btn.primary(href='#') Принять
+          a.btn.danger(href='#') Отклонить
+      .no-overflow
+        h3 Another AcmeCorp Inc.
+        .subtitle Российская Федерация, г. Москва
+        p
+          i.icon-question-sign
+          span <приглашен по проф-коду> | <найден по отраслям>
+      .clear
+      .subtle
+        span Приглашение отправлено
+        span= moment('2013-09-07').fromNow()
+
+
+
+

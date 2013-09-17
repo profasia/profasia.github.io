@@ -18,8 +18,8 @@
 .border-right{border-right:1px solid #ccc}
 .border-top{border-top:1px solid #ccc}
 .border-bottom{border-bottom:1px solid #ccc}
-.sans{font-family:font-sans;font-weight:font-sans-weight}
-.serif{font-family:font-serif;font-weight:font-serif-weight}
+.sans{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Light","HelveticaNeue","Helvetica Neue","Segoe UI","Helvetica","Tahoma","Geneva","Arial",sans-serif;font-weight:300}
+.serif{font-family:Georgia,serif;font-weight:400}
 .pad{padding:16px}
 .pad-left{padding-left:16px}
 .pad-right{padding-right:16px}
@@ -38,8 +38,7 @@
 }@media screen and (min-width:769px){.medium-screen{display:none !important}
 }@media screen and (max-width:960px){.large-screen{display:none !important}
 }@media screen and (min-width:961px){.no-large-screen{display:none !important}
-}i + span,span + i{margin-left:8px}
-.row{padding:0 !important;list-style:none outside !important;}
+}.row{padding:0 !important;list-style:none outside !important;}
 .row::after{content:'';display:block;clear:both}
 .row > *{float:left;margin:0;margin-left:2%;width:6.5%;}
 .row > *:first-child{margin-left:0}
@@ -61,10 +60,9 @@
 p,h1,h2,h3,h4,h5,h6,ul,ol,li{margin:1em 0}
 h1{font-size:36px}
 h2{font-size:28px;font-weight:normal;margin:24px 0}
-h3{font-size:20px;font-weight:normal;color:#d46}
+h3{font-size:20px;color:#7ab}
 hr{border:0;border-bottom:1px solid #ddd;box-shadow:0 1px 0 #fff}
 p,li{line-height:1.5em}
-.subtitle{color:#677;margin-top:-.75em}
 table{margin:0;max-width:100%;border-spacing:0;border-collapse:collapse;}
 table tr.top th,table tr.top td{vertical-align:top}
 table tr.bottom th,table tr.bottom td{vertical-align:bottom}
@@ -99,16 +97,92 @@ table.sorted thead th.sorted{cursor:pointer;}
 table.sorted thead th.sorted::after{content:'';position:relative;display:inline-block;vertical-align:baseline;width:0;height:0;border:6px solid transparent;margin:0 8px}
 table.sorted thead th.sorted.asc::after{border-top-color:#999;top:4px}
 table.sorted thead th.sorted.desc::after{border-bottom-color:#999;top:-4px}
+.subtitle{color:#677;margin-top:-.75em}
+.subtle{color:#677}
+.kicker{font-size:1.25em}
+.enormous{font-size:64px}
+.small{font-size:14px}
+.abstract{padding:8px;margin:8px 0;background:rgba(255,255,255,0.1);box-shadow:0 1px 3px rgba(0,0,0,0.5),0 1px 1px rgba(255,255,255,0.1) inset;color:#eee;text-shadow:0 1px 0 #000}
 .paper{background:#f5f5f5;box-shadow:0 1px 3px rgba(0,0,0,0.75),0 0 64px rgba(0,0,0,0.1) inset}
-.tobi{background:#aad0de;box-shadow:0 0 3px #000,0 0 16px rgba(0,0,0,0.25) inset,0 1px 1px rgba(255,255,255,0.4) inset;text-shadow:0 1px 1px rgba(255,255,255,0.75);color:#033;border-color:#7ab}
-.loki{background:#ada;box-shadow:0 0 3px #000,0 0 16px rgba(0,0,0,0.25) inset,0 1px 1px rgba(255,255,255,0.4) inset;text-shadow:0 1px 1px rgba(255,255,255,0.75);color:#242;border-color:#7a7}
+.primary{background:#aad0de;box-shadow:0 0 3px #000,0 0 16px rgba(0,0,0,0.25) inset,0 1px 1px rgba(255,255,255,0.4) inset;text-shadow:0 1px 1px rgba(255,255,255,0.75);color:#033;border-color:#7ab}
+.secondary{background:#ada;box-shadow:0 0 3px #000,0 0 16px rgba(0,0,0,0.25) inset,0 1px 1px rgba(255,255,255,0.4) inset;text-shadow:0 1px 1px rgba(255,255,255,0.75);color:#242;border-color:#7a7}
 .frame{padding:4px;background:rgba(255,255,255,0.25);box-shadow:0 1px 3px #000,0 0 64px rgba(0,0,0,0.1) inset}
 .headline{padding:6px 12px;}
 .headline i{opacity:.75}
 .headline i + span{margin-left:8px}
+table.grid td,table.grid th{padding:0}
+.stacknav a,.stacknav .elem{display:block;color:#333;text-decoration:none;padding:6px 12px;border-bottom:1px solid #ccc;box-shadow:0 1px 0 #fff;}
+.stacknav a:last-child,.stacknav .elem:last-child{border-bottom:0;box-shadow:none}
+.stacknav.small a,.stacknav.small .elem{padding:4px 6px}
+.dropdown{position:absolute;top:100%;left:0;z-index:20;display:none;width:216px;margin-top:2px;background:rgba(255,255,255,0.95);box-shadow:0 1px 5px rgba(0,0,0,0.25);}
+.dropdown.wider{width:296px}
+.dropdown.right{left:auto;right:0}
+.dropdown a,.dropdown .title,.dropdown .subtitle{display:block;padding:8px}
+.dropdown .subtitle{padding:0 8px}
+.dropdown .title{line-height:32px;font-size:20px;white-space:nowrap}
+.dropdown .sub{background:#ddd;color:#444}
+.dropdown a{display:block;text-decoration:none;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.dropdown a:hover{background:rgba(0,0,0,0.025)}
+.dropdown a.active{background:#f5f5f5;color:#555;box-shadow:0 25px 3px -24px rgba(0,0,0,0.2) inset,0 -23px 3px -24px rgba(0,0,0,0.2) inset}
+.dropdown i{display:inline-block !important;color:#555;text-align:center;width:24px}
+.dropdown hr{margin:0;border-bottom:1px dashed #ddd}
+.ctl-row{position:relative;margin-bottom:12px;}
+.ctl-row label{line-height:24px;display:block;text-align:left}
+.ctl-grid{display:table;}
+.ctl-grid.wide{width:100%}
+.ctl-grid > .cell{display:table-cell;vertical-align:top;position:relative}
+.ctl-grid > .cell + .cell{padding-left:8px}
+.ctl-grid label{line-height:24px}
+.ctl-grid.baseline > .cell,.ctl-grid .cell.baseline{vertical-align:baseline}
+.ctl-grid.middle > .cell,.ctl-grid .cell.middle{vertical-align:middle}
+@media screen and (max-width:480px){.ctl-grid,.ctl-grid > .cell,.ctl-grid > .cell + .cell{display:block;padding:0;margin-bottom:12px}
+}input.btn,button.btn{appearance:none;-moz-appearance:none;-webkit-appearance:none;box-sizing:content-box}
+.btn,a.btn{position:relative;display:inline-block;font-size:16px;font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Light","HelveticaNeue","Helvetica Neue","Segoe UI","Helvetica","Tahoma","Geneva","Arial",sans-serif;text-align:center;text-decoration:none !important;cursor:pointer;min-width:16px;white-space:nowrap;height:32px;line-height:32px;padding:0 12px;margin:0 4px;box-shadow:0 1px 1px rgba(255,255,255,0.4) inset,0 1px 3px rgba(0,0,0,0.2);border:1px solid #ccc;border-bottom:1px solid #aaa;color:#444;background:linear-gradient(top,#fff,#eee);}
+.btn.large,a.btn.large{font-size:18px;padding:0 20px;height:40px;line-height:40px}
+.btn.primary{border-color:#7ab;border-bottom-color:#4d8699;color:#033;text-shadow:0 1px 1px rgba(255,255,255,0.5)}
+.btn.secondary{border-color:#7a7;border-bottom-color:#538553;color:#242;text-shadow:0 1px 1px rgba(255,255,255,0.5)}
+.danger,.btn.danger{background:#c33;border-color:#711;border-bottom-color:#590d0d;color:#edd;text-shadow:0 1px 1px rgba(0,0,0,0.5)}
+.btn-group{display:inline-block;}
+.btn-group .btn{margin-right:0;margin-left:-1px !important;box-shadow:1px 1px 1px rgba(255,255,255,0.6) inset,0 1px 3px rgba(0,0,0,0.2)}
+.btn-group + .btn,.btn-group + .btn-group,.btn + .btn{margin-left:8px}
+.btn-panel .btn,.btn-panel .btn-group{vertical-align:middle}
+input[type="checkbox"],input[type="radio"]{font-size:20px}
+input.field,textarea.field{display:block;width:100%;box-sizing:border-box;border:1px solid #ddd;padding:6px;margin:0;outline:0;box-shadow:0 1px 5px rgba(0,0,0,0.1) inset,0 1px 1px rgba(255,255,255,0.5);background:#fff;line-height:20px;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+input.field:focus,textarea.field:focus{box-shadow:0 1px 3px rgba(0,0,0,0.1) inset,0 0 8px rgba(170,208,222,0.5);border-color:#aad0de}
+input.field.hollow,textarea.field.hollow{background:transparent;border:0;box-shadow:none;resize:none}
+input.field.shade,textarea.field.shade{background:rgba(96,48,0,0.3);box-shadow:0 1px 3px rgba(0,0,0,0.4) inset,0 1px 1px rgba(255,255,255,0.25);border:none;color:#fff;text-shadow:0 1px 1px #000,0 0 8px rgba(0,0,0,0.4);}
+input.field.shade:focus,textarea.field.shade:focus{background:rgba(96,48,0,0.3);box-shadow:0 1px 3px rgba(64,24,0,0.33) inset,0 -1px 16px rgba(64,24,0,0.33) inset,0 1px 1px rgba(255,255,255,0.25)}
+input.field.shade:input:-webkit-autofill,textarea.field.shade:input:-webkit-autofill{text-shadow:none}
+input.field.shade::-webkit-input-placeholder,textarea.field.shade::-webkit-input-placeholder{color:#444;text-shadow:0 1px 1px rgba(255,255,255,0.5)}
+input.field.shade::-moz-placeholder,textarea.field.shade::-moz-placeholder{color:#444;text-shadow:0 1px 1px rgba(255,255,255,0.5)}
+input.field.shade::-ie-input-placeholder,textarea.field.shade::-ie-input-placeholder{color:#444;text-shadow:0 1px 1px rgba(255,255,255,0.5)}
+input.field{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Light","HelveticaNeue","Helvetica Neue","Segoe UI","Helvetica","Tahoma","Geneva","Arial",sans-serif;font-size:16px;}
+input.field.large{font-size:28px}
+textarea.field{font-family:Monaco,Courier New,Courier,monospace;font-size:14px}
+label.descr-left,label.descr-right{display:block;line-height:16px;padding:8px}
+label.descr-left{text-align:left}
+label.descr-right{text-align:right}
+label.error{position:relative;display:block;background:rgba(0,0,0,0.6);color:#fff;text-shadow:0 1px 1px #000;font-size:14px;padding:6px 12px;margin-top:8px;border:2px solid #444;}
+label.error::after{content:'';display:block;position:absolute;top:-14px;left:16px;border:6px solid transparent;border-bottom-color:#444}
+.remote-fragment.process{-webkit-filter:blur(4px);-moz-filter:blur(4px);-o-filter:blur(4px);filter:blur(4px)}
+i{opacity:.75}
+i + span,span + i{margin-left:8px}
+i.smooth{-webkit-font-smoothing:antialiased;font-smoothing:antialiased}
+img.icon,canvas.icon{position:relative;vertical-align:middle;width:24px;height:24px;top:-2px}
+span + .icon,.icon + span{margin-left:6px}
+.icon-large{font-size:3em;text-align:center;display:block;padding-top:16px}
+.icon-white{color:#fff}
+a.noline{text-decoration:none}
+.nowrap{white-space:nowrap}
+.white,a.white{color:#fff;text-shadow:0 1px 1px rgba(0,0,0,0.75);}
+.white a,a.white a{color:#fafaf5;text-shadow:0 1px 1px rgba(0,0,0,0.75)}
+.black,.black a,a.black{color:#222;text-shadow:0 1px 1px rgba(255,255,255,0.4)}
+a.inline{color:#222;text-decoration:none;text-shadow:0 1px 1px rgba(255,255,255,0.4)}
+.shelved > *{margin-top:8px;}
+.shelved > *:first-child{margin-top:0}
 html,body,form,fieldset,img{padding:0;margin:0;border:0}
 a,a:hover,a:visited{color:#3ca9ee}
-body{font-family:Helvetica Neue,Segoe UI,Arial,sans-serif;font-size:16px;line-height:1.5em;font-weight:300;background:url("/img/bg/linen.png") repeat #444}
+body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Light","HelveticaNeue","Helvetica Neue","Segoe UI","Helvetica","Tahoma","Geneva","Arial",sans-serif;font-weight:300;font-size:16px;line-height:1.5em;font-weight:300;background:url("/img/bg/linen.png") repeat #444}
 #header{position:relative;line-height:40px;}
 #header::after{content:'';display:table;clear:both}
 #header .brand{width:192px;display:inline-block;text-align:center;}
@@ -125,7 +199,8 @@ body{font-family:Helvetica Neue,Segoe UI,Arial,sans-serif;font-size:16px;line-he
 #sidenav a{display:block;color:#aaa;text-shadow:0 1px 1px #000;text-decoration:none;padding:6px 16px;}
 #sidenav a:hover,#sidenav a.active{color:#fff}
 #sidenav a.active{color:#fff;text-shadow:0 0 1px #aad0de,0 0 16px #aad0de}
-#main{margin-left:192px;padding:16px}
+#sidenav .badge{margin:0 6px;display:inline-block;color:#ada;text-shadow:0 0 1px #aad0de,0 0 16px #aad0de}
+#main{margin-left:192px;padding:16px;min-height:320px}
 @media screen and (max-width:768px){#sidenav{float:none;text-align:center;width:auto;}
 #sidenav a{display:inline-block}
 #main{margin-left:0}

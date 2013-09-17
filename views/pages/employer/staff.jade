@@ -1,0 +1,25 @@
+extends layout
+
+block main
+  div(data-ref='#nav-acmecorp, #nav-staff')
+  .frame
+    .paper
+      table.rows.stripped(width='100%')
+        for i in [0,1,2,3,4,5,6]
+          tr
+            td(width='48')
+              img(src='/img/misc/lagrange.jpg', width=48, height=48)
+            td
+              .kicker: a(href='#') Жозеф Луи Лагранж
+              .subtle Математик, Инженер-механик
+            td.right-align
+              a.btn.secondary(href='#')
+                i.icon-comment
+                span Связь
+  .abstract
+    p Здесь мы отображаем сотрудников компании.
+    p Основные задачи:
+    ul
+      li переход к управлению сотрудником
+      li быстрый переход к переписке или к контактным данным (зависит от Связь)
+      li поиск сотрудника (здесь не показан)

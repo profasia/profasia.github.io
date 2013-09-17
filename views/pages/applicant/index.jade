@@ -4,10 +4,11 @@ block main
   div(data-ref='#nav-applicant, #nav-index')
   .frame
     .paper
+      img(src='/img/misc/lagrange.jpg').left-float.margin
       .pad
         h2 Жозеф Луи Лагранж
         .subtitle 77 лет, женат, дети
-      hr.no-margin
+      hr.no-margin.clear
       table.rows(width="100%")
         tr
           td.right-align Основная специальность
@@ -28,7 +29,7 @@ block main
   .row.margin-top
     .span-6
       .frame
-        .headline.tobi.border-bottom
+        .headline.primary.border-bottom
           i.icon-info-sign
           span Прошлые работодатели
         .paper
@@ -40,7 +41,7 @@ block main
 
     .span-6
       .frame
-        .headline.tobi.border-bottom
+        .headline.secondary.border-bottom
           i.icon-info-sign
           span Образовательные учреждения
         .paper
@@ -49,3 +50,9 @@ block main
               td Regno di Sardegna
             tr
               td Académie des sciences
+
+  .abstract
+    p Основная анкета пользователя (она же резюме, если нет веских причин считать иначе).
+    p Основные функции:
+    ul
+      li просмотр и редактирование своих сведений

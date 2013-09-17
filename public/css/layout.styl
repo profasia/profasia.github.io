@@ -7,8 +7,9 @@ a, a:hover, a:visited
   color: #3ca9ee
 
 body
-  font-family: Helvetica Neue, Segoe UI, Arial, sans-serif;
-  font-size: 16px
+  font-family: font-sans
+  font-weight: font-sans-weight
+  font-size: font-size
   line-height: 1.5em
   font-weight: 300
   background: url('/img/bg/linen.png') repeat #444
@@ -81,10 +82,17 @@ body
     &.active
       color: #fff
       text-shadow: 0 0 1px #aad0de, 0 0 16px #aad0de
+  .badge
+    margin: 0 6px
+    display:inline-block
+    color: secondary-upper
+    text-shadow: 0 0 1px #aad0de, 0 0 16px #aad0de
+
 
 #main
   margin-left: 192px
   padding: 16px
+  min-height:320px
 
 @media screen and (max-width:768px)
   #sidenav
