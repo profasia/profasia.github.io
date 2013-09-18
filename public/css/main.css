@@ -54,8 +54,8 @@
 .row .span-10{width:83%}
 .row .span-11{width:91.5%}
 .row .span-12{width:100%}
-@media screen and (max-width:768px){.row:not(.mobile) > *{float:none;width:100% !important;margin:16px 0 !important}
-}@media screen and (max-width:480px){.row.mobile > *{float:none;width:100% !important;margin:16px 0 !important}
+@media screen and (max-width:768px){.row:not(.mobile) > *{float:none;width:100% !important;margin:8px 0 !important}
+}@media screen and (max-width:480px){.row.mobile > *{float:none;width:100% !important;margin:8px 0 !important}
 }em{color:#067}
 p,h1,h2,h3,h4,h5,h6,ul,ol,li{margin:1em 0}
 h1{font-size:36px}
@@ -203,10 +203,10 @@ body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Ligh
 #sidenav .badge{background:#c33;line-height:16px;margin:0 6px;padding:2px 6px;border-radius:12px;display:inline-block;color:#fff;text-shadow:0 1px 1px #000}
 #main{margin-left:192px;padding:16px;min-height:320px}
 #aside{display:none}
-@media screen and (max-width:768px){#sidenav{float:none;text-align:center;width:auto;}
+@media screen and (max-width:768px){#sidenav{float:none;text-align:center;width:auto;padding-bottom:0;}
 #sidenav a{display:inline-block;}
 #sidenav a.active::after{display:none}
-#main{margin-left:0}
+#main{padding:4px;margin-left:0}
 }@media screen and (min-width:1601px){#main{margin-right:192px}
 #aside{display:block;float:right;width:192px;font-size:14px;line-height:20px}
 }#footer{font-size:14px;padding:0 16px;color:#555;}
