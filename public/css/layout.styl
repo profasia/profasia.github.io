@@ -115,6 +115,9 @@ body
   padding: 16px
   min-height:320px
 
+#aside
+  display:none
+
 @media screen and (max-width:768px)
   #sidenav
     float:none
@@ -124,6 +127,17 @@ body
       display:inline-block
   #main
     margin-left:0
+
+@media screen and (min-width:1601px)
+  #main
+    margin-right: 192px
+
+  #aside
+    display: block
+    float:right
+    width: 192px
+    font-size:14px
+    line-height: 20px
 
 #footer
   font-size:14px
