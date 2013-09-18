@@ -12,7 +12,7 @@ body
   font-size: font-size
   line-height: 1.5em
   font-weight: 300
-  background: url('../img/bg/linen.png') repeat #444
+  background: #eee
 
 #header
   position:relative
@@ -33,19 +33,18 @@ body
   .nav > a
     position:relative
     display:inline-block
-    color: #aaa
-    text-shadow: 0 1px 1px #000
+    color: #444
     padding: 0 16px
     margin: 0 8px
     text-align: center
     text-decoration: none
     &:hover
-      color:#fff
+      color:#222
     &.sticky
       padding:0
       margin-left:-12px
   .nav > a.active
-    color: #fff
+    color: #222
     &::after
       content:''
       position:absolute
@@ -68,30 +67,48 @@ body
         display:none
 
 #content
-  background: rgba(0,0,0,.25)
-  box-shadow: 0 64px 3px -64px #000 inset, 0 -64px 3px -64px #000 inset
+  background: rgba(0,0,0,.1)
+  box-shadow: 0 64px 64px -64px rgba(0,0,0,.15) inset,
+    0 -64px 32px -64px rgba(0,0,0,.15) inset
+  border: 1px solid #aaa
+  border-width: 1px 0
 
 #sidenav
   float: left
   width: 192px
   padding: 16px 0
+  line-height: 40px
   a
     display:block
-    color: #aaa
-    text-shadow: 0 1px 1px #000
+    position:relative
+    color: #222
     text-decoration: none
-    padding: 6px 16px
+    padding: 0 16px
+    white-space: nowrap
     &:hover, &.active
-      color: #fff
+      color: #000
     &.active
-      color: #fff
-      text-shadow: 0 0 1px #aad0de, 0 0 16px #aad0de
+      background:#eee
+      &::after
+        content:''
+        display:block
+        position:absolute
+        top:0
+        right:-20px
+        width:0
+        height:0
+        border: 20px solid transparent
+        border-width: 20px 10px
+        border-left-color: #eee
   .badge
+    background: danger-upper
+    line-height:16px
     margin: 0 6px
+    padding: 2px 6px
+    border-radius:12px
     display:inline-block
-    color: secondary-upper
-    text-shadow: 0 0 1px #aad0de, 0 0 16px #aad0de
-
+    color: #fff
+    text-shadow: 0 1px 1px #000
 
 #main
   margin-left: 192px
@@ -109,10 +126,9 @@ body
     margin-left:0
 
 #footer
-  font-size:12px
+  font-size:14px
   padding: 0 16px
-  color: #aaa
-  text-shadow: 0 1px 1px #000
+  color: #555
   a
-    color: #eee
+    color: #222
     text-decoration:none
