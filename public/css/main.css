@@ -204,7 +204,8 @@ body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Ligh
 #main{margin-left:192px;padding:16px;min-height:320px}
 #aside{display:none}
 @media screen and (max-width:768px){#sidenav{float:none;text-align:center;width:auto;}
-#sidenav a{display:inline-block}
+#sidenav a{display:inline-block;}
+#sidenav a.active::after{display:none}
 #main{margin-left:0}
 }@media screen and (min-width:1601px){#main{margin-right:192px}
 #aside{display:block;float:right;width:192px;font-size:14px;line-height:20px}
