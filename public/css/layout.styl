@@ -88,8 +88,9 @@ body
     &:hover, &.active
       color: #000
     &.active
-      background:#eee
-      &::after
+      background:#fff
+      box-shadow: 0 1px 1px #aaa
+      &::after, &::before
         content:''
         display:block
         position:absolute
@@ -99,7 +100,10 @@ body
         height:0
         border: 20px solid transparent
         border-width: 20px 10px
-        border-left-color: #eee
+        border-left-color: #fff
+      &::before
+        top:2px
+        border-left-color: #aaa
   .badge
     background: danger-upper
     line-height:16px

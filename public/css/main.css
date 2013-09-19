@@ -87,7 +87,7 @@ table.rows tr:first-child td,table.rows tr:first-child th{border-top-width:0;box
 table.rows thead + tbody tr:first-child td,table.rows tbody + tfoot tr:first-child td,table.rows thead + tbody tr:first-child th,table.rows tbody + tfoot tr:first-child th{border-top-width:1px;box-shadow:0 1px 0 #fff inset}
 table.cols td,table.cols th{border-right:1px solid #ccc;}
 table.cols td:last-child,table.cols th:last-child{border-right:0}
-table.stripped tbody tr:nth-child(2n + 1) td,table.stripped tbody tr:nth-child(2n + 1) th{background:rgba(0,0,0,0.025)}
+table.stripped tbody tr:nth-child(2n + 1) td,table.stripped tbody tr:nth-child(2n + 1) th{background:rgba(0,0,0,0.05)}
 table.bordered{border-collapse:separate;border-radius:4px;border:1px solid #aaa;border-radius:4px}
 table.hover tr:hover td{background:rgba(0,0,0,0.035) !important}
 table.top td,table.top th{vertical-align:top}
@@ -198,8 +198,9 @@ body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Ligh
 #sidenav{float:left;width:192px;padding:16px 0;line-height:40px;}
 #sidenav a{display:block;position:relative;color:#222;text-decoration:none;padding:0 16px;white-space:nowrap;}
 #sidenav a:hover,#sidenav a.active{color:#000}
-#sidenav a.active{background:#eee;}
-#sidenav a.active::after{content:'';display:block;position:absolute;top:0;right:-20px;width:0;height:0;border:20px solid transparent;border-width:20px 10px;border-left-color:#eee}
+#sidenav a.active{background:#fff;box-shadow:0 1px 1px #aaa;}
+#sidenav a.active::after,#sidenav a.active::before{content:'';display:block;position:absolute;top:0;right:-20px;width:0;height:0;border:20px solid transparent;border-width:20px 10px;border-left-color:#fff}
+#sidenav a.active::before{top:2px;border-left-color:#aaa}
 #sidenav .badge{background:#c33;line-height:16px;margin:0 6px;padding:2px 6px;border-radius:12px;display:inline-block;color:#fff;text-shadow:0 1px 1px #000}
 #main{margin-left:192px;padding:16px;min-height:320px}
 #aside{display:none}
