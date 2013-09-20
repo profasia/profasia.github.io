@@ -2,12 +2,47 @@ extends layout
 
 block main
   div(data-ref='#nav-acmecorp, #nav-connect')
-  .frame
-    .paper.pad.centered
-      p.kicker Этот раздел находится в разработке.
-      .enormous.pad
-        i.icon-wrench
-      p.subtle Приносим извинения за неудобства.
+  .row
+    .span-4
+      .frame
+        .paper
+          table.rows.stripped.condensed(width='100%')
+            tr
+              td.inbox.active
+                h3
+                  img.icon(src='/img/misc/lagrange.jpg', width=16, height=16)
+                  span Жозеф Луи Лагранж
+                .subtle Привожу в аттаче доказательство, что для любого простого...
+            each i in [0,1,2,3,4,5]
+              tr
+                td.inbox
+                  h3
+                    img.icon(src='/img/misc/lagrange.jpg', width=16, height=16)
+                    span Жозеф Луи Лагранж
+                  .subtle В моих прежних работах я также показал, что для любого...
+    .span-8
+      .thread
+
+        .elem.left
+          img.icon(src='/img/misc/lagrange.jpg', width=48, height=48)
+          .body
+            .paper.pad
+              p.
+                Привожу в аттаче доказательство, что для любого простого числа p
+                число (p - 1)! + 1 также делится на p.
+              p.
+                Заметьте, что утверждение принадлежит Ферма, а теорему впервые
+                сформулировал Вильсон. Но доказательство мое :)
+              .subtle.right-align 5 минут назад
+
+        .elem.right
+          img.icon(src='/img/misc/acme1.jpg', width=48, height=48)
+          .body
+            .paper.pad
+              p.
+                Вышлите, пожалуйста, Вашу лучшую работу. Чтобы было, что совету
+                директоров о Вас показать и рассказать. Не затягивайте.
+              .subtle.right-align 1 час назад
 
 
 

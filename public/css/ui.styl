@@ -23,7 +23,7 @@
 
 .frame
   padding: 4px
-  background: rgba(0,0,0,.15)
+  background: #aaa
 
 .headline
   padding: 6px 12px
@@ -297,42 +297,76 @@ label.error
     border: 6px solid transparent
     border-bottom-color:#444
 
-// Remote fragments blur when loading is performed
+// Inbox and thread in (connect)
 
-.remote-fragment
-  &.process
-    -webkit-filter: blur(4px)
-    -moz-filter: blur(4px)
-    -o-filter: blur(4px)
-    filter: blur(4px)
+.inbox
+  h3
+    position:relative
+    margin:0
+    font-size: font-size
+    vertical-align: middle
+    color: #333
+  &.active
+    background: lighten(primary-upper, 50%) !important
+    h3
+      color: darken(primary-lower, 50%)
+      &::after, &::before
+        content:''
+        display:block
+        position:absolute
+        top:8px
+        right:-20px
+        height: 0
+        width: 0
+        border: 8px solid transparent
+        border-left-color: lighten(primary-upper, 50%)
+      &::before
+        right:-26px
+        border-left-color: #aaa
+
+.thread
+  .elem
+    .body
+      position: relative
+      background: #aaa
+      padding: 4px
+      &::after
+        content:''
+        display:block
+        width:0
+        height:0
+        position:absolute
+        border:6px solid transparent
+        top:16px
+    &.left
+      .icon
+        float:left
+      .body
+        margin-left: 64px
+        &::after
+          left:-12px
+          border-right-color:#aaa
+    &.right
+      .icon
+        float:right
+      .body
+        margin-right: 64px
+        &::after
+          right:-12px
+          border-left-color:#aaa
+  .elem + .elem
+    margin-top:16px
+
+
 
 // Glyphs
 
 i { opacity:.75 }
-i + span, span + i
+i + span, span + i, .icon + span, span + .icon
   margin-left: 8px
 i.smooth
   -webkit-font-smoothing: antialiased
   font-smoothing: antialiased
-
-img.icon, canvas.icon
-  position:relative
-  vertical-align:middle
-  width:24px
-  height:24px
-  top:-2px
-
-span + .icon, .icon + span
-  margin-left:6px
-
-.icon-large
-  font-size:3em
-  text-align:center
-  display:block
-  padding-top:16px
-
-.icon-white
-  color:#fff
 
 // Standards
 

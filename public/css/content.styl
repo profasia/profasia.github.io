@@ -1,5 +1,9 @@
-em
+em, .em
+  font-style:italic
   color: #067
+
+strong, .strong
+  font-weight: bold
 
 // Common blocks
 
@@ -65,6 +69,9 @@ table
     &.terse
       width:32px
       padding:0
+  &.condensed
+    th, td
+      padding:4px 6px
   th
     font-size: 20px
     font-weight: normal
@@ -138,6 +145,8 @@ table
 
 .subtle
   color: #677
+  font-size: 13px
+  line-height: 18px
 
 .kicker
   font-size:1.25em
