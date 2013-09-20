@@ -3,9 +3,6 @@ html, body, form, fieldset, img
   margin:0
   border:0
 
-a, a:hover, a:visited
-  color: #3ca9ee
-
 body
   font-family: font-sans
   font-weight: font-sans-weight
@@ -44,16 +41,8 @@ body
       padding:0
       margin-left:-12px
   .nav > a.active
-    color: #222
-    &::after
-      content:''
-      position:absolute
-      display:block
-      height:12px
-      bottom:-12px
-      left:0
-      right:0
-      background:url(../img/topnav-pop.png) center top no-repeat
+    color: darken(a-color, 25%)
+    text-shadow: 0 0 1px primary-upper, 0 0 4px #fff
 
 @media screen and (max-width:480px)
   #header
@@ -138,13 +127,20 @@ body
 
 @media screen and (min-width:1601px)
   #main
-    margin-right: 192px
+    margin-right: 256px
 
   #aside
     display: block
-    float:right
-    width: 192px
-    font-size:14px
+    position:fixed
+    top:0
+    bottom:0
+    right:0
+    padding-left: 16px
+    background: rgba(255,255,255,.9)
+    box-shadow: 0 0 3px rgba(0,0,0,.75)
+    z-index: 100
+    width: 240px
+    font-size: 14px
     line-height: 20px
 
 #footer

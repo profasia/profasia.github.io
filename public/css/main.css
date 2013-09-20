@@ -58,6 +58,7 @@
 }@media screen and (max-width:480px){.row.mobile > *{float:none;width:100% !important;margin:8px 0 !important}
 }em,.em{font-style:italic;color:#067}
 strong,.strong{font-weight:bold}
+a,a:hover,a:visited{color:#3ca9ee}
 p,h1,h2,h3,h4,h5,h6,ul,ol,li{margin:1em 0}
 h1{font-size:36px}
 h2{font-size:28px;font-weight:normal;margin:24px 0}
@@ -191,7 +192,6 @@ a.inline{color:#222;text-decoration:none;text-shadow:0 1px 1px rgba(255,255,255,
 .shelved > *{margin-top:4px;}
 .shelved > *:first-child{margin-top:0}
 html,body,form,fieldset,img{padding:0;margin:0;border:0}
-a,a:hover,a:visited{color:#3ca9ee}
 body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Light","HelveticaNeue","Helvetica Neue","Segoe UI","Helvetica","Tahoma","Geneva","Arial",sans-serif;font-weight:300;font-size:16px;line-height:1.5em;font-weight:300;background:#eee}
 #header{position:relative;line-height:40px;}
 #header::after{content:'';display:table;clear:both}
@@ -201,8 +201,7 @@ body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Ligh
 #header .nav > a{position:relative;display:inline-block;color:#444;padding:0 16px;margin:0 8px;text-align:center;text-decoration:none;}
 #header .nav > a:hover{color:#222}
 #header .nav > a.sticky{padding:0;margin-left:-12px}
-#header .nav > a.active{color:#222;}
-#header .nav > a.active::after{content:'';position:absolute;display:block;height:12px;bottom:-12px;left:0;right:0;background:url("../img/topnav-pop.png") center top no-repeat}
+#header .nav > a.active{color:#1285ce;text-shadow:0 0 1px #aad0de,0 0 4px #fff}
 @media screen and (max-width:480px){#header .brand,#header .auth,#header .nav{width:auto;float:none;position:static;display:block;text-align:center;}
 #header .brand > a.active::after,#header .auth > a.active::after,#header .nav > a.active::after{display:none}
 }#content{background:rgba(0,0,0,0.1);box-shadow:0 64px 64px -64px rgba(0,0,0,0.15) inset,0 -64px 32px -64px rgba(0,0,0,0.15) inset;border:1px solid #aaa;border-width:1px 0}
@@ -219,7 +218,7 @@ body{font-family:"HelveticaNeueLight","HelveticaNeue-Light","Helvetica Neue Ligh
 #sidenav a{display:inline-block;}
 #sidenav a.active::after{display:none}
 #main{padding:4px;margin-left:0}
-}@media screen and (min-width:1601px){#main{margin-right:192px}
-#aside{display:block;float:right;width:192px;font-size:14px;line-height:20px}
+}@media screen and (min-width:1601px){#main{margin-right:256px}
+#aside{display:block;position:fixed;top:0;bottom:0;right:0;padding-left:16px;background:rgba(255,255,255,0.9);box-shadow:0 0 3px rgba(0,0,0,0.75);z-index:100;width:240px;font-size:14px;line-height:20px}
 }#footer{font-size:14px;padding:0 16px;color:#555;}
 #footer a{color:#222;text-decoration:none}
