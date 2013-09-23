@@ -1,0 +1,112 @@
+extends ../layout
+
+block main
+  .row
+    .span-6
+      .frame
+        .headline.primary.border-bottom
+          i.icon-info-sign
+          span Форма 1
+        .paper
+          table.rows(width='100%')
+            tr
+              td.right-align(width='40%')
+                label(for='a1') Фамилия
+              td
+                input#a1.field.focus(type='text')
+            tr
+              td.right-align
+                label(for='b1') Имя
+              td
+                input#b1.field(type='text')
+            tr
+              td.right-align
+                label(for='c1') Отчество
+              td
+                input#c1.field(type='text')
+            tr
+              td.right-align
+                label(for='d1') Пол
+              td
+                select#d1.select2
+                  option мужской
+                  option женский
+                  option Никита
+          hr.no-margin
+          table.rows.collapse(width='100%')
+            tr.bottom
+              td(width='33%')
+                label(for='f1') Фамилия
+                input#f1.field(type='text')
+              td(width='33%')
+                label(for='g1') Имя
+                input#g1.field(type='text')
+              td(width='33%').centered
+                button.btn.primary(type='submit')
+                  i.icon-ok
+                  span Сохранить
+    .span-6
+      .frame
+        .headline.secondary.border-bottom
+          i.icon-info-sign
+          span Форма 2
+        .paper
+          table(width='100%')
+            tr
+              td.right-align(width='40%')
+                label(for='a2') Фамилия
+              td
+                input#a2.field.hollow(type='text')
+            tr
+              td.right-align
+                label(for='b2') Имя
+              td
+                input#b2.field.hollow(type='text')
+            tr
+              td.right-align
+                label(for='c2') Отчество
+              td
+                input#c2.field.hollow(type='text')
+            tr
+              td.right-align
+                label(for='d2') Пол
+              td
+                select#d2.select2.hollow
+                  option мужской
+                  option женский
+                  option Никита
+            tr
+              td
+              td
+                button.btn.primary(type='submit')
+                  i.icon-ok
+                  span Сохранить
+
+      .frame.margin-top
+        .paper
+          table.rows(width='100%')
+            tr
+              td.right-align
+                label(for='f2') Выпить
+              td(width='50%')
+                input#f2(type='checkbox', checked)
+            tr
+              td.right-align
+                label(for='g2') Покурить
+              td(width='50%')
+                input#g2(type='checkbox', checked)
+          hr.no-margin
+          table.rows.collapse(width='100%')
+            tr
+              td(width='33%').centered
+                input#u21(type='radio', name='u')
+                label(for='u21') Никита
+              td(width='33%').centered
+                input#u22(type='radio', name='u')
+                label(for='u22') Леша
+              td(width='33%').centered
+                button.btn.primary(type='submit')
+                  i.icon-ok
+                  span Сохранить
+
+

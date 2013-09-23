@@ -206,8 +206,9 @@ input.btn, button.btn
 input[type="checkbox"],
 input[type="radio"]
   font-size:20px
+  margin: 0 8px
 
-input.field, textarea.field
+input.field, textarea.field, .select2-container.field
   display:block
   width:100%
   box-sizing:border-box
@@ -222,13 +223,14 @@ input.field, textarea.field
   -webkit-appearance:none
   -moz-appearance:none
   appearance:none
-  &:focus
+  &:focus, &.select2-container-active
     box-shadow: 0 1px 3px rgba(0,0,0,.1) inset,
       0 0 8px rgba(primary-upper, 50%)
     border-color:primary-upper
   &.hollow
     background:transparent
     border:0
+    border-bottom: 1px dashed #ccc
     box-shadow:none
     resize:none
   &.shade
