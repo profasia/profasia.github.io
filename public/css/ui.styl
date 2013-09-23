@@ -300,6 +300,7 @@ label.error
 // Inbox and thread in (connect)
 
 .inbox
+  margin-right:8px
   h3
     position:relative
     margin:0
@@ -323,6 +324,11 @@ label.error
       &::before
         right:-26px
         border-left-color: #aaa
+
+@media screen and (max-width:480px)
+ .inbox.active
+    h3::before, h3::after
+      display:none
 
 .thread
   .elem
@@ -357,7 +363,30 @@ label.error
   .elem + .elem
     margin-top:16px
 
+.topnav
+  position:relative
+  margin:8px 0
+  &::after
+    content:''
+    display:block
+    position:absolute
+    left:0
+    right:0
+    border:1px solid #aaa
+    border-bottom-width:0
+    height: 8px
+  a
+    display:inline-block
+    padding: 4px 12px
+    margin: 0 8px
+    text-decoration: none
+    color: #222
+    &.active
+      color: #fff
+      background: #aaa
 
+.topnav + *
+  margin: 0 8px
 
 // Glyphs
 
