@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/public/css/font-awesome.css">
     <script src="/public/js/jquery-2.0.3.min.js"></script>
     <script src="/public/js/scalpel-0.2.1.min.js"></script>
+    <script src="/public/js/select2.min.js"></script>
+    <script src="/public/js/app.js"></script>
   </head>
   <body>
     <div id="header"><a href="/index.html" class="brand"><img src="/public/img/logo.png" alt="ProfAsia"></a>
@@ -51,11 +53,87 @@
       </div>
       <div id="main">
         <div data-ref="#nav-acmecorp, #nav-connect"></div>
-        <div class="frame">
-          <div class="paper pad centered">
-            <p class="kicker">Этот раздел находится в разработке.</p>
-            <div class="enormous pad"><i class="icon-wrench"></i></div>
-            <p class="subtle">Приносим извинения за неудобства.</p>
+        <div class="topnav"><a href="#" class="active"><span>Переписка</span></a><a href="#"><span>Рассылка</span></a></div>
+        <div class="row">
+          <div class="span-4">
+            <div class="frame">
+              <div class="paper">
+                <table width="100%" class="rows stripped condensed">
+                  <tr>
+                    <td class="inbox active">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">Привожу в аттаче доказательство, что для любого простого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="inbox">
+                      <h3><img src="/img/misc/lagrange.jpg" width="16" height="16" class="icon"><span>Жозеф Луи Лагранж</span></h3>
+                      <div class="subtle">В моих прежних работах я также показал, что для любого...</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="span-8">
+            <div class="thread">
+              <div class="elem left"><img src="/img/misc/lagrange.jpg" width="48" height="48" class="icon">
+                <div class="body">
+                  <div class="paper pad">
+                    <p>
+                      Привожу в аттаче доказательство, что для любого простого числа p
+                      число (p - 1)! + 1 также делится на p.
+                    </p>
+                    <p>
+                      Заметьте, что утверждение принадлежит Ферма, а теорему впервые
+                      сформулировал Вильсон. Но доказательство мое :)
+                    </p>
+                    <div class="subtle right-align">5 минут назад</div>
+                  </div>
+                </div>
+              </div>
+              <div class="elem right"><img src="/img/misc/acme1.jpg" width="48" height="48" class="icon">
+                <div class="body">
+                  <div class="paper pad">
+                    <p>
+                      Вышлите, пожалуйста, Вашу лучшую работу. Чтобы было, что совету
+                      директоров о Вас показать и рассказать. Не затягивайте.
+                    </p>
+                    <div class="subtle right-align">1 час назад</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

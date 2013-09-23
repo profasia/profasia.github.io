@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProfAsia Prototype</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.css">
+    <script src="/public/js/jquery-2.0.3.min.js"></script>
+    <script src="/public/js/scalpel-0.2.1.min.js"></script>
+    <script src="/public/js/select2.min.js"></script>
+    <script src="/public/js/app.js"></script>
+  </head>
+  <body>
+    <div id="header"><a href="/index.html" class="brand"><img src="/public/img/logo.png" alt="ProfAsia"></a>
+      <div class="nav"><a id="nav-applicant" href="/applicant/index.html"><i class="icon-user"></i><span>Жозеф Луи Лагранж</span></a><a id="nav-acmecorp" href="/employer/index.html"><i class="icon-building"></i><span>AcmeCorp Inc.</span></a><a id="nav-choose-org" href="javascript:;" data-switch="#choose-org" class="sticky"><i class="icon-caret-down"></i></a>
+        <div id="choose-org" data-url="/partials/choose-org.html" class="dropdown right"></div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="sidenav">
+      </div>
+      <div id="aside">
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+        <div class="entry">
+          <h3>AcmeCorp</h3>
+          <div class="subtitle">Россия, Москва</div>
+          <p>Требуется грузчик з/п от 1 500 руб./час</p>
+        </div>
+      </div>
+      <div id="main">
+        <div class="row">
+          <div class="span-6">
+            <div class="frame">
+              <div class="headline primary border-bottom"><i class="icon-info-sign"></i><span>Форма 1</span></div>
+              <div class="paper">
+                <table width="100%" class="rows">
+                  <tr>
+                    <td width="40%" class="right-align">
+                      <label for="a1">Фамилия</label>
+                    </td>
+                    <td>
+                      <input id="a1" type="text" class="field focus">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="b1">Имя</label>
+                    </td>
+                    <td>
+                      <input id="b1" type="text" class="field">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="c1">Отчество</label>
+                    </td>
+                    <td>
+                      <input id="c1" type="text" class="field">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="d1">Пол</label>
+                    </td>
+                    <td>
+                      <select id="d1" class="select2">
+                        <option>мужской</option>
+                        <option>женский</option>
+                        <option>Никита</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+                <hr class="no-margin">
+                <table width="100%" class="rows collapse">
+                  <tr class="bottom">
+                    <td width="33%">
+                      <label for="f1">Фамилия</label>
+                      <input id="f1" type="text" class="field">
+                    </td>
+                    <td width="33%">
+                      <label for="g1">Имя</label>
+                      <input id="g1" type="text" class="field">
+                    </td>
+                    <td width="33%" class="centered">
+                      <button type="submit" class="btn primary"><i class="icon-ok"></i><span>Сохранить</span></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="span-6">
+            <div class="frame">
+              <div class="headline secondary border-bottom"><i class="icon-info-sign"></i><span>Форма 2</span></div>
+              <div class="paper">
+                <table width="100%">
+                  <tr>
+                    <td width="40%" class="right-align">
+                      <label for="a2">Фамилия</label>
+                    </td>
+                    <td>
+                      <input id="a2" type="text" class="field hollow">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="b2">Имя</label>
+                    </td>
+                    <td>
+                      <input id="b2" type="text" class="field hollow">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="c2">Отчество</label>
+                    </td>
+                    <td>
+                      <input id="c2" type="text" class="field hollow">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="d2">Пол</label>
+                    </td>
+                    <td>
+                      <select id="d2" class="select2 hollow">
+                        <option>мужской</option>
+                        <option>женский</option>
+                        <option>Никита</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button type="submit" class="btn primary"><i class="icon-ok"></i><span>Сохранить</span></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="frame margin-top">
+              <div class="paper">
+                <table width="100%" class="rows">
+                  <tr>
+                    <td class="right-align">
+                      <label for="f2">Выпить</label>
+                    </td>
+                    <td width="50%">
+                      <input id="f2" type="checkbox" checked>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="right-align">
+                      <label for="g2">Покурить</label>
+                    </td>
+                    <td width="50%">
+                      <input id="g2" type="checkbox" checked>
+                    </td>
+                  </tr>
+                </table>
+                <hr class="no-margin">
+                <table width="100%" class="rows collapse">
+                  <tr>
+                    <td width="33%" class="centered">
+                      <input id="u21" type="radio" name="u">
+                      <label for="u21">Никита</label>
+                    </td>
+                    <td width="33%" class="centered">
+                      <input id="u22" type="radio" name="u">
+                      <label for="u22">Леша</label>
+                    </td>
+                    <td width="33%" class="centered">
+                      <button type="submit" class="btn primary"><i class="icon-ok"></i><span>Сохранить</span></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>2012—2013 &copy; <a href='http://profasia.org'>ProfAsia LLC</a></p>
+    </div>
+  </body>
+</html>
